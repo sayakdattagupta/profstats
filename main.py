@@ -31,7 +31,7 @@ def aggregate_languages(repos):
 
 def generate_markdown(lang_t):
     total_bytes = sum(lang_t.values())
-    lines = ["### Languages Used \n"]
+    lines = ["### [Languages Used](https://github.com/sayakdattagupta/profstats) \n"]
     for lang, count in sorted(lang_t.items(), key=lambda x: x[1], reverse=True):
         percent = 100 * count / total_bytes
         lines.append(f"- {lang}: {percent:.2f}%")
