@@ -1,8 +1,8 @@
-name: Update GitHub language stats every 10 minutes
+name: Update GitHub language stats every 60 minutes
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/60 * * * *'
   workflow_dispatch:  
 
 jobs:
