@@ -1,9 +1,9 @@
 name: Update GitHub language stats every 60 minutes
 
 on:
-  schedule:
+  schedule: #replace '60' with 'x' for updating once every 'x' minutes
     - cron: '*/60 * * * *'
-  workflow_dispatch:  
+  workflow_dispatch:
 
 permissions:
   contents: write
